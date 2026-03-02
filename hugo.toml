@@ -1,0 +1,19 @@
+# 适配本地预览的基础配置
+baseURL = "http://localhost:1313/"  # 本地预览改为这个地址，部署时再改回你的域名
+languageCode = "zh-CN"              # 改为中文环境
+title = "My New Hugo Project"       # 可保留或改为中文，比如 "我的Hugo博客"
+theme = "PaperMod"
+
+# 核心Author配置（你的配置本身没问题，保留）
+[Author]
+  name = "BingShao"
+  email = "shaobingj@gmail.com"
+  link = "https://github.com/shao-bing"
+
+# 新增：PaperMod主题必需的中文支持和基础参数
+[Params]
+  env = "development"               # 开发环境，部署时改为production
+  author = "BingShao"               # 和Author.name一致，双重保险
+  defaultContentLanguage = "zh"     # 明确指定默认语言为中文
+  hasCJKLanguage = true             # 开启中日韩文字支持（关键修复项）
+  description = "BingShao的Hugo博客" # 可选，补充站点描述
