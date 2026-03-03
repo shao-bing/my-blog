@@ -1,6 +1,6 @@
 {
   "buildCommand": "hugo --gc --minify",
   "outputDirectory": "public",
-  "installCommand": "apt-get update && apt-get install -y hugo",
+  "installCommand": "nix-shell -p hugo --run 'hugo version'",
   "framework": null
 }
